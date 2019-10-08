@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B108A55E-63D3-4DED-B9CB-E15A96FA1C41}</ProjectGuid>
+    <ProjectGuid>{854D765D-1673-43B4-ADF1-B650DAAD8BB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ListaAlunosLibrary</RootNamespace>
-    <AssemblyName>ListaAlunosLibrary</AssemblyName>
+    <RootNamespace>ListandoDeNomes</RootNamespace>
+    <AssemblyName>ListandoDeNomes</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,14 +51,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\ControllerAluno.cs" />
-    <Compile Include="Model\Aluno.cs" />
-    <Compile Include="Model\AlunosContextBD.cs" />
+    <Compile Include="Controller\NomesController.cs" />
+    <Compile Include="Migrations\201910081351067_InitialCreate.cs" />
+    <Compile Include="Migrations\201910081351067_InitialCreate.designer.cs">
+      <DependentUpon>201910081351067_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910081352318_InitialCreate1.cs" />
+    <Compile Include="Migrations\201910081352318_InitialCreate1.designer.cs">
+      <DependentUpon>201910081352318_InitialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\NomeContextDB.cs" />
+    <Compile Include="Model\NomePessoal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910081351067_InitialCreate.resx">
+      <DependentUpon>201910081351067_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910081352318_InitialCreate1.resx">
+      <DependentUpon>201910081352318_InitialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

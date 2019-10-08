@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaDeNomes", "LISTANDONOMES\SistemaDeNomes.csproj", "{F266E02C-CA18-4F97-AF04-5C6C182CBB35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListandoDeNomes", "ListandoDeNomes\ListandoDeNomes.csproj", "{854D765D-1673-43B4-ADF1-B650DAAD8BB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F266E02C-CA18-4F97-AF04-5C6C182CBB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F266E02C-CA18-4F97-AF04-5C6C182CBB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F266E02C-CA18-4F97-AF04-5C6C182CBB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F266E02C-CA18-4F97-AF04-5C6C182CBB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{854D765D-1673-43B4-ADF1-B650DAAD8BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{854D765D-1673-43B4-ADF1-B650DAAD8BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{854D765D-1673-43B4-ADF1-B650DAAD8BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{854D765D-1673-43B4-ADF1-B650DAAD8BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C6250F6-5BA9-4A1C-BC00-B1B54752C814}
+	EndGlobalSection
+EndGlobal

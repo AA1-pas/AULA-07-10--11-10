@@ -5,16 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListaAlunosLibrary.Model
+namespace ListandoDeNomes.Model
 {
-    public class Aluno
+    public class NomePessoal
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
         [Required]
         [StringLength(50)]
         public string Nome { get; set; }
         [Required]
-        public int Idade { get; set; }
+        [StringLength(50)]
+        public string Origem { get; set; }
     }
 }
