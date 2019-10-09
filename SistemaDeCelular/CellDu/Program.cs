@@ -18,6 +18,9 @@ namespace CellDu
             Console.WriteLine("\n\n*** SAINDO DO SISTEMA ***");
         }
 
+        /// <summary>
+        /// Metodo do Menu Principal
+        /// </summary>
         public static void Menu()
         {
             int opcao = 0;
