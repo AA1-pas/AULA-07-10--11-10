@@ -13,10 +13,12 @@ namespace CatalogoCelulares.Model
         public int Id { get; set; }
         [Required]
         [MaxLength(30)]
-        public string Marca { get; set; }
+        public string Marca { get; set; } 
         [Required]
         [MaxLength(30)]
         public string Modelo { get; set; }
-        public double Preco { get; set; } 
+        [Required]
+        public double Preco { get; set; }
+
     }
 }

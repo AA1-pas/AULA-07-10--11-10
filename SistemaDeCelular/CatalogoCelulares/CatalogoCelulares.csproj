@@ -52,13 +52,43 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\CelularesController.cs" />
+    <Compile Include="Migrations\201910091441421_InitialCreate.cs" />
+    <Compile Include="Migrations\201910091441421_InitialCreate.designer.cs">
+      <DependentUpon>201910091441421_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910091809502_allan.cs" />
+    <Compile Include="Migrations\201910091809502_allan.designer.cs">
+      <DependentUpon>201910091809502_allan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910091813116_allan2.cs" />
+    <Compile Include="Migrations\201910091813116_allan2.designer.cs">
+      <DependentUpon>201910091813116_allan2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910091816244_allan3.cs" />
+    <Compile Include="Migrations\201910091816244_allan3.designer.cs">
+      <DependentUpon>201910091816244_allan3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Celular.cs" />
     <Compile Include="Model\CelularesContextDB.cs" />
     <Compile Include="Model\ControleUsuario.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201910091441421_InitialCreate.resx">
+      <DependentUpon>201910091441421_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910091809502_allan.resx">
+      <DependentUpon>201910091809502_allan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910091813116_allan2.resx">
+      <DependentUpon>201910091813116_allan2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910091816244_allan3.resx">
+      <DependentUpon>201910091816244_allan3.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

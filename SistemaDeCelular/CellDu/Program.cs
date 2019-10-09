@@ -14,7 +14,6 @@ namespace CellDu
         static void Main(string[] args)
         {
             Menu();
-        
             Console.WriteLine("\n\n*** SAINDO DO SISTEMA ***");
         }
 
