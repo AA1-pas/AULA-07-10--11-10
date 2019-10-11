@@ -54,6 +54,8 @@
     <Compile Include="Controller\ControllerBicicletas.cs" />
     <Compile Include="Model\Bicicleta.cs" />
     <Compile Include="Model\BicicletasContextDB.cs" />
+    <Compile Include="Model\Marca.cs" />
+    <Compile Include="Model\Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

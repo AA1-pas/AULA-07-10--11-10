@@ -1,6 +1,7 @@
 ﻿using EntityBicicletas.Model;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,11 +11,13 @@ namespace EntityBicicletas.Controller
     public class ControllerBicicletas
     {
         BicicletasContextDB bicicletas = new BicicletasContextDB();
+        
 
         public bool AddBicicleta(Bicicleta item)
         {
             if (item == null)
                 return false;
+           
             bicicletas.Bicicletas.Add(item);
             bicicletas.SaveChanges();
             return true;
@@ -34,9 +37,18 @@ namespace EntityBicicletas.Controller
         {
             return bicicletas.Bicicletas;
         }
+        public IQueryable<Modelo> GetModelos()
+        {
+            return bicicletas.Modelos;
+        }
+        public IQueryable<Marca> GetMarcas()
+        {
+            return bicicletas.Marcas;
+        }
 
         public bool AtuBicicleta(Bicicleta item)
         {
+
             var resu = bicicletas.Bicicletas.FirstOrDefault(x => x.ID == item.ID && x.Ativo == true);
             if (resu == null)
                 return false;

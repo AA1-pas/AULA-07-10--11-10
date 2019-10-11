@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +12,12 @@ namespace EntityBicicletas.Model
     {
         [Key]
         public int ID { get; set; }
-        [Required]
-        [MaxLength(30)]
-        public string Marca { get; set; }
-        [Required]
-        [MaxLength(50)]
-        public string Modelo { get; set; }
+        [ForeignKey("Marca")]
+        public int MarcaID { get; set; }
+        public virtual Marca Marca { get; set; }
+        [ForeignKey("Modelo")]
+        public int ModeloID { get; set; }
+        public virtual Modelo Modelo { get; set; }
         [Required]
         public double Valor { get; set; }
         public int Ano { get; set; }
